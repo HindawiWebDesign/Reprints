@@ -1,0 +1,1801 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+body {
+  background: #EDEDED;
+  width: 100%; }
+
+ul, li, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  border: 0; }
+
+a, .authors-list label span, .transfer label span {
+  color: #6cb33e;
+  text-decoration: underline; }
+  a:hover, .authors-list label span:hover, .transfer label span:hover {
+    color: #00718f;
+    text-decoration: none; }
+
+/* ==========================================================================
+   General Display/Float/Align/V. Align/Wrap
+   ========================================================================== */
+/* General Display */
+.display-none,
+.display_none,
+.no-screen {
+  display: none; }
+
+.display-inl_block {
+  display: inline-block; }
+
+.display-block {
+  display: block; }
+
+.display-table {
+  display: table; }
+
+/* General Float */
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+/* General Align */
+.align-right {
+  text-align: right; }
+
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+/* General Vertical Align */
+.valign-top {
+  vertical-align: top; }
+
+/* General Wrap */
+.nowrap {
+  white-space: nowrap; }
+
+.pre_line {
+  white-space: pre-line; }
+
+/* General Margins */
+.margin-t-0 {
+  margin-top: 0; }
+
+.margin-t-hpc {
+  margin-top: 0.8rem; }
+
+.margin-t-1pc {
+  margin-top: 1.6rem; }
+
+.margin-t-2pc {
+  margin-top: 3.2rem; }
+
+.margin-b-0 {
+  margin-bottom: 0; }
+
+/* General Paddings */
+.padding-2 {
+  padding: 3.2rem; }
+
+.padding-t-0 {
+  padding-top: 0; }
+
+.padding-t-hpc {
+  padding-top: 0.8rem; }
+
+.padding-t-1pc {
+  padding-top: 1.6rem; }
+
+.padding-t-2pc {
+  padding-top: 3.2rem; }
+
+.padding-b-0 {
+  padding-bottom: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Myriad W01 Regular", sans-serif;
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2.4rem;
+  color: #787878;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on; }
+
+.smaller-font {
+  font-family: "Myriad W01 Regular", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem; }
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-family: "Myriad W01 Bd", sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+
+h2 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 1.6rem;
+  font-family: "Myriad W01 Regular", sans-serif;
+  text-transform: uppercase; }
+
+section .percent {
+  font-family: "Myriad W01 Regular", sans-serif; }
+
+section dt, section .subtotal dd {
+  font-family: "Myriad W01 Bd", sans-serif; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?q7i05g");
+  src: url("../fonts/icomoon.eot?q7i05g#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?q7i05g") format("truetype"), url("../fonts/icomoon.woff?q7i05g") format("woff"), url("../fonts/icomoon.svg?q7i05g#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-help:before {
+  content: "\e900"; }
+
+.icon-author:before {
+  content: "\e901"; }
+
+.icon-institution:before {
+  content: "\e902"; }
+
+/*
+Flex Grid Framework
+Platform: Sass (.scss)
+
+Original repository:
+https://github.com/afonsopacifer/flex-grid-framework
+Website:
+http://flexgridframework.com/
+Author:
+Afonso Pacifer (afonsopacifer.com)
+Version: 1.3.1
+Licence:
+MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md
+* /
+
+/* Configs
+------------------------------------------------*/
+/* Row
+------------------------------------------------*/
+/* Columns
+------------------------------------------------*/
+/* Offset
+------------------------------------------------*/
+/* Flex Container
+------------------------------------------------*/
+/* Flex Items
+------------------------------------------------*/
+header {
+  width: 113.6rem;
+  max-width: 113.6rem;
+  margin: 3rem auto 0;
+  padding: 0 1.6rem; }
+  header .container {
+    min-height: 88px; }
+  header a.logo {
+    width: 72px;
+    height: 72px;
+    outline: 0 none;
+    line-height: 0;
+    float: left; }
+  header h1 {
+    color: #000;
+    font-family: "Myriad W01 Lt", sans-serif;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    top: 4.8rem; }
+  header nav {
+    clear: both;
+    border-top: 1px solid #D1D1D1; }
+    header nav li {
+      display: inline-block;
+      margin-right: 3.4rem;
+      padding: 0.8rem 0; }
+      header nav li:first-child:after {
+        width: 9px;
+        height: 9px;
+        border-right: 1px solid #6cb33e;
+        border-bottom: 1px solid #6cb33e;
+        content: "";
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: -2.2rem; }
+      header nav li.steps--enabled {
+        color: #00718f; }
+      header nav li.steps--disabled {
+        color: #BABABA; }
+
+main {
+  width: 113.6rem;
+  max-width: 113.6rem;
+  margin: 0 auto;
+  padding: 0 1.6rem; }
+
+section {
+  background-color: #FFF;
+  margin-top: 1.6rem;
+  padding: 0;
+  position: relative; }
+  section .section-content--right {
+    width: 49.8333%; }
+    section .section-content--right p {
+      float: left; }
+    section .section-content--right h3:first-child {
+      margin-top: 0; }
+  section .padding-2 h3:first-child {
+    margin-top: 0;
+    padding-top: 0; }
+  section .section-content,
+  section .invoice-details {
+    width: 100%;
+    box-sizing: border-box; }
+  section .section-content--left,
+  section .invoice-details,
+  section footer {
+    background-color: #F5F5F5; }
+  section .section-content--left,
+  section .section-content--right {
+    width: 49.8333%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 3.2rem;
+    box-sizing: border-box;
+    display: table-cell; }
+  section dl {
+    height: auto;
+    width: 100%;
+    margin-bottom: 0.4rem;
+    display: table; }
+  section dt {
+    float: left;
+    padding: 0 1.6rem 0 0;
+    width: 37%;
+    white-space: nowrap; }
+  section dd {
+    float: right;
+    width: 58%; }
+  section .invoice-details__apc {
+    float: left; }
+    section .invoice-details__apc dl {
+      float: left; }
+    section .invoice-details__apc dt {
+      width: 63%;
+      white-space: nowrap; }
+    section .invoice-details__apc dd {
+      width: 20%;
+      text-align: right;
+      white-space: nowrap; }
+    section .invoice-details__apc .net-charges {
+      margin-top: 0.4rem; }
+    section .invoice-details__apc .net-charges dt {
+      border-top: 1px solid transparent;
+      padding-top: 0.8rem; }
+    section .invoice-details__apc .net-charges dd {
+      border-top: 1px solid #D1D1D1;
+      padding-top: 0.8rem; }
+    section .invoice-details__apc .subtotal {
+      border-top: 1px solid #D1D1D1;
+      margin: 0.4rem 0 1.2rem;
+      padding-top: 1.6rem; }
+  section .icon-help {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+    cursor: pointer;
+    margin-left: 0.4rem;
+    font-size: 24px;
+    color: #BABABA; }
+    section .icon-help:hover, section .icon-help:focus, section .icon-help:active {
+      color: #787878; }
+  section .icon-orcid {
+    background-color: transparent;
+    background-image: url(../images/orcid16x16.png);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    -webkit-background-size: 16px 16px;
+    -moz-background-size: 16px 16px;
+    -o-background-size: 16px 16px;
+    -ms-background-size: 16px 16px;
+    background-position: center center;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 0.53333rem;
+    margin-top: -3px; }
+  section label.active-payer {
+    color: #6cb33e; }
+    section label.active-payer .icon-author,
+    section label.active-payer .icon-institution {
+      color: #6cb33e; }
+    section label.active-payer:hover, section label.active-payer:focus, section label.active-payer:active {
+      color: #6cb33e; }
+  section label.disabled {
+    color: #c3c3c3;
+    cursor: default;
+    pointer-events: none; }
+  section label:hover, section label:focus, section label:active {
+    color: #00718f; }
+  section .icon-author,
+  section .icon-institution {
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 0.53333rem;
+    margin: 0 auto 0.8rem;
+    font-size: 50px; }
+  section .coupon {
+    width: 90%; }
+    section .coupon .icon-help {
+      margin-top: 0.4rem; }
+  section p {
+    margin: 1.6rem 0; }
+    section p:first-child {
+      margin-top: 0; }
+    section p:last-child {
+      margin-bottom: 0; }
+  section .payment-options__list {
+    height: 68px; }
+    section .payment-options__list li {
+      display: block;
+      float: left;
+      width: 95.43333px;
+      height: 66px;
+      margin-right: 1.6rem;
+      border: 1px solid #D1D1D1;
+      text-align: center;
+      border-radius: 5px;
+      opacity: 0.6;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); }
+      section .payment-options__list li.transfer {
+        margin-right: 0; }
+      section .payment-options__list li.payment-active {
+        border: 1px solid #6cb33e;
+        opacity: 1;
+        filter: none;
+        -webkit-filter: none; }
+      section .payment-options__list li:hover {
+        opacity: 1;
+        filter: none;
+        -webkit-filter: none;
+        transition: all ease 0.3s; }
+  section .paypal form {
+    width: 100%;
+    height: 100%; }
+  section #transfer-content,
+  section #creditcard-content {
+    margin-top: 1.6rem; }
+    section #transfer-content img,
+    section #creditcard-content img {
+      margin-bottom: 1rem; }
+  section hr {
+    float: left;
+    width: 100%;
+    display: none; }
+  section .container {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    /*padding: 0 $pica*2 $pica*2;*/
+    margin-top: 1.6rem; }
+
+.section-title {
+  background-color: #00718f;
+  border-radius: 0.5rem 0.5rem 0 0; }
+
+h2 {
+  margin: 0;
+  padding: 0.8rem 1.6rem 0.8rem 3.2rem;
+  color: #FFF; }
+
+h3 {
+  padding: 0.8rem 1.6rem 0 0;
+  border-bottom: 1px solid #cccccc;
+  color: #00718f;
+  margin: 2rem 0 1rem; }
+
+.article-details {
+  margin-top: 0;
+  border-top: 0.6rem solid #6cb33e; }
+
+.section-content.formdt .section-content--right {
+  padding-top: 0;
+  padding-right: 0;
+  width: 49.5333%; }
+  .section-content.formdt .section-content--right .nofloat {
+    float: none;
+    width: 100%; }
+    .section-content.formdt .section-content--right .nofloat textarea {
+      margin: 1.6rem 0 0;
+      height: 16.6rem; }
+
+.section-content.formdt dl {
+  margin-bottom: 0; }
+
+.section-content.formdt dt {
+  padding: 1.4rem 0 0; }
+
+.section-content.formdt input[type="submit"] {
+  margin-top: 3.2rem; }
+
+.align-right {
+  margin-bottom: 1.6rem; }
+  .align-right *:last-child {
+    margin-right: 0; }
+
+.inputtext50 input[type="text"] {
+  width: 47.53333%;
+  float: left; }
+  .inputtext50 input[type="text"]:last-child {
+    margin-right: 0;
+    float: right; }
+  .inputtext50 input[type="text"]:only-child {
+    float: none; }
+
+.validation-message {
+  color: red;
+  line-height: 2.4rem; }
+
+.download-invoice img {
+  width: 3.2rem;
+  margin-right: 1.6rem; }
+
+#confirm-payment .success {
+  background-image: url(../images/success.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 18px;
+  -webkit-background-size: 24px 18px;
+  -moz-background-size: 24px 18px;
+  -o-background-size: 24px 18px;
+  -ms-background-size: 24px 18px;
+  padding-left: 3.2rem; }
+  #confirm-payment .success b {
+    font-size: 2.2rem; }
+
+#confirm-payment p {
+  margin-bottom: 0; }
+
+#confirm-payment .button-default {
+  margin-right: 0; }
+
+.note {
+  margin-top: 1.6rem; }
+  .note span {
+    color: #6cb33e; }
+
+.error-404 {
+  text-align: center;
+  margin: 0;
+  padding: 16rem 0; }
+  .error-404 .symbol {
+    margin-left: auto;
+    display: block;
+    height: 190px;
+    width: 190px;
+    border-radius: 190px;
+    color: #dadada;
+    /* border: 0.6rem solid #d1d1d1; */
+    margin: 0 auto;
+    background-color: #f7f7f7; }
+    .error-404 .symbol .number {
+      font-family: "Myriad W01 SmBd", sans-serif;
+      font-size: 80px;
+      line-height: 180px;
+      display: block; }
+    .error-404 .symbol .text {
+      font-size: 16px;
+      text-transform: uppercase;
+      display: block;
+      line-height: initial;
+      margin-top: -56px;
+      color: #c7c7c7; }
+  .error-404 p {
+    margin-top: 3.2rem; }
+
+footer {
+  font-size: 1.6rem;
+  width: 113.6rem;
+  max-width: 113.6rem;
+  margin: 0 auto;
+  text-align: center;
+  clear: both;
+  padding: 1.6rem 0;
+  border-top: 1px solid #D1D1D1; }
+  footer div {
+    margin-top: 0.4rem; }
+  footer p {
+    margin: 0; }
+
+/* FormHack v1.2.0 (formhack.io) */
+/* Global Reset Styles ------------------ */
+input,
+textarea,
+select,
+option,
+optgroup,
+button,
+legend,
+fieldset {
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Myriad W01 Regular", sans-serif, sans-serif;
+  font-size: 1.8rem;
+  color: #787878;
+  vertical-align: top;
+  margin: 0 0; }
+
+datalist {
+  font-family: "Myriad W01 Regular", sans-serif, sans-serif;
+  font-size: 1.8rem; }
+
+label {
+  padding: 0; }
+
+/* Input & Textarea ------------------ */
+/* Fields with standard width */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="number"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[list],
+input[type="file"],
+select {
+  width: 100%;
+  max-width: 100%;
+  padding: 1.3rem 0 0;
+  background-color: #FFFFFF;
+  border: none;
+  border-bottom: 1px solid #C8C8C8; }
+
+.invoice-details__apc input[type="text"] {
+  border: 1px solid #C8C8C8;
+  width: 46%;
+  padding: 0 0.8rem;
+  height: 3.2rem;
+  border-radius: 0.5rem; }
+  .invoice-details__apc input[type="text"]:focus {
+    background-color: #FFFFFF;
+    border-color: #787878; }
+
+/* Fields with standard height */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="number"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[list] {
+  height: 4rem;
+  -webkit-appearance: none; }
+
+/* Other */
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.8rem;
+  background-color: #FFFFFF;
+  border-radius: 0;
+  border: 1px solid #C8C8C8;
+  resize: none;
+  -webkit-appearance: none;
+  overflow: auto; }
+
+input[type="range"] {
+  height: 4rem;
+  width: 100%;
+  max-width: 100%; }
+
+input[type="file"] {
+  min-height: 4rem; }
+
+input[type="search"] {
+  height: 4rem;
+  -webkit-appearance: none; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle; }
+
+/* Select ------------------ */
+select {
+  height: 29px;
+  margin-top: 1.3rem;
+  padding: 0 1.6rem 0 0;
+  border-radius: 0;
+  background-attachment: scroll;
+  background-clip: padding-box;
+  background-color: transparent;
+  background-image: url("../images/arrow-down.svg");
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  -webkit-background-size: 12px 12px;
+  -moz-background-size: 12px 12px;
+  -o-background-size: 12px 12px;
+  -ms-background-size: 12px 12px;
+  background-position: right center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none; }
+  select::-ms-expand {
+    display: none; }
+
+select[multiple] {
+  height: auto;
+  min-height: 4rem;
+  padding: 0; }
+  select[multiple] option {
+    margin: 0;
+    padding: 0.8rem; }
+
+/* Fieldset ------------------ */
+fieldset {
+  padding: 1rem 2.5rem;
+  border-radius: 0;
+  border: 1px solid #C8C8C8; }
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: 700; }
+
+/* Buttons, Input Type Submit/Reset ------------------ */
+.button-default,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="image"] {
+  display: inline-block;
+  text-decoration: none;
+  margin: 1.6rem 1.2rem 0 0;
+  font: 1.6rem/1.7rem "Myriad W01 Bd", sans-serif;
+  color: #FFFFFF;
+  height: 32px;
+  transition: all ease 0.3s;
+  text-decoration: none;
+  padding: 0.8rem 1.6rem 0.8rem;
+  border-width: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+.button-default,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="image"] {
+  background-color: #6cb33e;
+  position: relative; }
+  .button-default:hover, .button-default:active, .button-default:focus,
+  button:hover,
+  button:active,
+  button:focus,
+  input[type="button"]:hover,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="image"]:hover,
+  input[type="image"]:active,
+  input[type="image"]:focus {
+    background-color: #568f32;
+    color: #FFFFFF;
+    border-color: #787878; }
+
+.invoice-details__apc .button-default {
+  margin: 0 0 0 1px; }
+
+.billing-details header span .button-default {
+  margin: 0 0 0 -2.4rem; }
+
+.modal__box__content .button-default {
+  margin: 0 1.2rem 1.6rem 0; }
+
+.modal__box__content label {
+  width: auto;
+  height: auto;
+  margin: 0 1.2rem 1.6rem 0; }
+  .modal__box__content label .button-default {
+    margin: 0; }
+
+.paypal .button-paypal {
+  background-color: transparent;
+  color: #787878;
+  height: 66px;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  /*$pica*/
+  width: 100%; }
+
+.paypal img {
+  height: 70%; }
+
+.creditcard .button-creditcard {
+  background-color: transparent;
+  font-size: 0;
+  height: 67px;
+  line-height: 0;
+  margin: 0;
+  padding: 1.6rem;
+  width: 132px;
+  display: table-cell;
+  box-sizing: border-box; }
+
+.creditcard img {
+  width: 56px;
+  height: 35px; }
+
+.checkout .button-checkout {
+  background-color: transparent;
+  font-size: 0;
+  height: 67px;
+  line-height: 0;
+  margin: 0;
+  padding: 1.6rem;
+  width: 132px;
+  display: table-cell; }
+
+.checkout img {
+  width: 36px;
+  height: 36px; }
+
+.transfer .button-transfer {
+  background-color: transparent;
+  font-size: 0;
+  height: 67px;
+  line-height: 0;
+  margin: 0;
+  padding: 1.6rem;
+  width: 132px;
+  display: block;
+  box-sizing: border-box; }
+
+.transfer img {
+  width: 68px;
+  height: 24px;
+  margin: 2.1rem 1.4rem; }
+
+.transfer label {
+  padding: 3.2rem 1.6rem 0;
+  /* text-transform: uppercase; */
+  white-space: nowrap;
+  font-size: 1.8rem; }
+
+input[type="image"] {
+  text-align: center;
+  padding: 0.8rem; }
+
+/* States ------------------ */
+a.button-default:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+  background-color: #568f32;
+  color: #FFFFFF; }
+
+input:focus,
+textarea:focus,
+select:focus,
+option:focus {
+  background-color: #FFFFFF;
+  border-color: #787878; }
+
+a.button-default[disabled],
+input[disabled],
+button[disabled] {
+  cursor: default;
+  opacity: 0.35;
+  filter: alpha(opacity=35);
+  background-color: #6cb33e; }
+  a.button-default[disabled]:hover,
+  input[disabled]:hover,
+  button[disabled]:hover {
+    background-color: #6cb33e;
+    cursor: default; }
+
+textarea[disabled],
+select[disabled],
+option[disabled],
+input[type="text"]:disabled {
+  cursor: default;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
+  background-color: transparent; }
+  textarea[disabled]:hover,
+  select[disabled]:hover,
+  option[disabled]:hover,
+  input[type="text"]:disabled:hover {
+    background-color: transparent;
+    cursor: default; }
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  outline: #787878 solid 0; }
+
+input.invalid,
+textarea.invalid,
+select.invalid,
+input.invalid:focus,
+textarea.invalid:focus,
+select.invalid:focus {
+  border-color: #FF0000;
+  color: #FF0000; }
+
+.modal {
+  display: block;
+  padding: 0 1em;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0; }
+
+label.for-modal {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  padding: 0; }
+
+.modal input {
+  position: absolute;
+  right: 100px;
+  top: 30px;
+  z-index: -10;
+  display: none; }
+
+.modal__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -800;
+  border-radius: 0.5rem 0.5rem 0 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5); }
+
+.modal__box {
+  padding: 0;
+  margin: 1em auto;
+  max-width: 736px;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 0.5rem 0.5rem 0 0;
+  position: relative;
+  top: 48%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.modal__box .section-title label {
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.5em;
+  right: .5em;
+  top: .5em;
+  width: 24px;
+  height: 24px; }
+
+input:checked ~ .modal__overlay {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 800; }
+
+input:focus + label {
+  -webkit-transform: scale(0.97);
+  transform: scale(0.97); }
+
+.modal__box__content {
+  padding: 1.6rem 3.2rem 1.6rem;
+  max-height: 44rem;
+  overflow-y: hidden; }
+  .modal__box__content p {
+    margin: 1.6rem 0; }
+
+main .modal__overlay.full-overlay {
+  position: fixed; }
+
+main .modal__overlay.full-overlay .button-default,
+main .modal__box form label {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  margin-top: 0; }
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.tabs {
+  padding-bottom: 0; }
+
+.tabs:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.tabs label,
+.transfer label {
+  cursor: pointer; }
+
+.steps .transfer label {
+  padding: 0 0;
+  margin-right: 0;
+  width: 100%;
+  height: 66px; }
+
+input.toggle-tab,
+#details1 {
+  display: none; }
+
+/*.tabs [id^="tab"]:checked + label {}*/
+/*#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3,*/
+#details1:checked ~ #transfer-content {
+  display: block; }
+
+#tab4:checked ~ #tab-content4 {
+  display: block; }
+
+#tab3:checked ~ #tab-content3 {
+  display: block; }
+
+#tab2:checked ~ #tab-content2 {
+  display: block; }
+
+#tab1:checked ~ #tab-content1 {
+  display: block; }
+
+/* Cookies Notification */
+.notification {
+  background-color: #758285;
+  padding: 1.6rem;
+  transition: all .2s ease-in-out;
+  min-width: 116.8rem;
+  /* For non-responsive */
+  position: relative;
+  box-sizing: border-box; }
+  .notification div {
+    max-width: 113.6rem;
+    margin: 0 auto;
+    position: relative;
+    text-align: center; }
+  .notification p {
+    display: inline-block;
+    margin: 0.3rem 1.6rem 0.3rem 0;
+    line-height: 2rem;
+    vertical-align: top;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    font-family: "Myriad W01 Regular", sans-serif; }
+  .notification a.btn_accept {
+    font-family: "Myriad W01 Regular", sans-serif;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    line-height: 2.2rem;
+    text-decoration: none;
+    position: absolute;
+    margin-right: -0.7rem;
+    right: 0;
+    top: 2px; }
+  .notification a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    background-color: transparent; }
+    .notification a:hover {
+      background-color: transparent;
+      text-decoration: none; }
+  .notification a.btn_accept:hover {
+    text-decoration: none; }
+
+.steps h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  padding: 0.2rem 3.2rem 0.1rem;
+  background-color: #EDEDED;
+  /*border-bottom: 1px solid $color-border-grey;*/
+  text-transform: uppercase;
+  font-family: "Myriad W01 Regular", sans-serif;
+  color: #787878; }
+
+.steps .payer {
+  text-align: center; }
+  .steps .payer label {
+    margin-right: 6.4rem;
+    width: 45%;
+    padding: 0 0.8rem;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block; }
+
+.steps .radio-select label {
+  margin: 0 2rem 0 0.5rem; }
+  .steps .radio-select label:last-child {
+    margin-right: 0; }
+
+.steps .wizard {
+  position: relative; }
+
+.steps .wizard-wrap, .steps .wizard ul {
+  height: 63px;
+  text-align: center; }
+
+.steps .wizard ul {
+  list-style: none;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 4;
+  text-align: right;
+  display: inline-block; }
+
+.steps .clearfix:before, .steps .clearfix:after {
+  display: table;
+  content: " "; }
+
+.steps .wizard *, .steps .wizard *:after, .steps .wizard *:before {
+  box-sizing: border-box; }
+
+.steps .wizard ul li {
+  float: left;
+  position: relative;
+  margin-right: 10px; }
+
+.steps .wizard ul li {
+  font-size: 13px;
+  height: 40px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 40px;
+  padding: 40px 0 0 0;
+  min-width: 66px;
+  position: relative; }
+
+.steps .wizard-number {
+  position: absolute;
+  margin-left: -35px;
+  top: 0;
+  left: 50%;
+  font-size: 2rem;
+  line-height: 66px;
+  text-align: center;
+  color: #929292;
+  background-color: #fff; }
+
+.steps .wizard ul li.active-step .wizard-number-inner {
+  background-color: #787878;
+  font-family: "Myriad W01 Bd", sans-serif;
+  color: #fff;
+  border-width: 0px; }
+
+.steps .wizard ul .wizard-number:after {
+  /* line */
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  top: 21px;
+  left: 36px;
+  position: absolute;
+  background: #d1d1d1;
+  z-index: -2; }
+
+.steps .wizard ul .wizard-step:last-child .wizard-number:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 15px;
+  top: 27px;
+  left: 75px;
+  position: absolute;
+  background: #000;
+  z-index: -2; }
+
+.steps .wizard ul li .wizard-number-inner:before {
+  transition: all 300ms;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  margin-left: -25px;
+  top: 0;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px; }
+
+.steps .wizard ul li.active-step .wizard-number-inner:after {
+  background: #f4f4f4;
+  color: #40464b;
+  box-shadow: 0 3px 4px #dbf3ef inset;
+  top: 0;
+  left: 50%;
+  margin-left: -25px;
+  line-height: 50px;
+  height: 50px;
+  width: 50px; }
+
+.steps .wizard *, .steps .wizard *:after, .steps .wizard *:before {
+  box-sizing: border-box; }
+
+.steps .wizard ul li .wizard-number-inner {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  margin-left: auto;
+  line-height: 40px;
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  color: #787878;
+  border: 1px solid #d1d1d1;
+  background-color: #f5f5f5;
+  font-family: "Myriad W01 Regular", sans-serif; }
+
+.steps span.wizard-subtext {
+  position: absolute;
+  width: 110px;
+  left: -4px;
+  font-size: 1.4rem; }
+
+.steps li.active-step span.wizard-subtext {
+  /*font-family: "Myriad W01 Bd", sans-serif;*/ }
+
+.steps .formdt dl:only-child dt {
+  padding: 0; }
+
+.steps .formdt dl:only-child select {
+  margin-top: 0; }
+
+.steps .formdt dt {
+  width: 30%;
+  padding: 1.4rem 0 0; }
+
+.steps .formdt .radio-select dt {
+  padding-top: 0; }
+
+.steps .formdt dd {
+  width: 65%; }
+
+.steps .wizard ul li.success-step .wizard-subtext {
+  color: #6cb33e; }
+
+.steps .wizard ul li.success-step span.wizard-number-inner {
+  background-image: url(../images/success.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 18px;
+  -webkit-background-size: 24px 18px;
+  -moz-background-size: 24px 18px;
+  -o-background-size: 24px 18px;
+  -ms-background-size: 24px 18px;
+  background-position: center center;
+  display: inline-block;
+  font-size: 0;
+  border-color: #6cb33e; }
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group; }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; }
+  .no-print {
+    display: none; }
+  .no-screen {
+    display: block; } }
+
+/*# sourceMappingURL=main.css.map */

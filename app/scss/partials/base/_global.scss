@@ -1,0 +1,156 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+body {
+    background: $bgcolor-body;
+    width: 100%;
+}
+
+ul, li, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  border: 0;
+}
+
+a, .authors-list label span, .transfer label span {
+    color: $color-green;
+    text-decoration: underline;
+
+    &:hover {
+        color: $color-blue;
+        text-decoration: none;
+    }
+}
+
+/* ==========================================================================
+   General Display/Float/Align/V. Align/Wrap
+   ========================================================================== */
+
+/* General Display */
+.display-none,
+.display_none,
+.no-screen         {display: none;}
+.display-inl_block {display: inline-block;}
+.display-block     {display: block;}
+.display-table     {display: table;}
+
+/* General Float */
+.float-right       {float: right;}
+.float-left        {float: left;}
+
+/* General Align */
+.align-right       {text-align: right;}
+.align-left        {text-align: left;}
+.align-center      {text-align: center;}
+
+/* General Vertical Align */
+.valign-top        {vertical-align: top;}
+
+/* General Wrap */
+.nowrap            {white-space: nowrap;}
+.pre_line          {white-space: pre-line;}
+
+/* General Margins */
+.margin-t-0        {margin-top: 0}
+.margin-t-hpc      {margin-top: $pica/2}
+.margin-t-1pc      {margin-top: $pica}
+.margin-t-2pc      {margin-top: $pica*2}
+.margin-b-0        {margin-bottom: 0}
+
+/* General Paddings */
+.padding-2         {padding: $pica*2}
+.padding-t-0        {padding-top: 0}
+.padding-t-hpc      {padding-top: $pica/2}
+.padding-t-1pc      {padding-top: $pica}
+.padding-t-2pc      {padding-top: $pica*2}
+.padding-b-0        {padding-bottom: 0}

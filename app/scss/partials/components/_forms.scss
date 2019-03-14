@@ -1,0 +1,492 @@
+/* FormHack v1.2.0 (formhack.io) */
+
+// Config -----------------------------
+
+// Font
+$fh-font-family: $myriadRegular, sans-serif !default;
+$fh-font-size: $fontSize-default !default;
+$fh-font-color: #787878 !default;
+
+// Borders
+$fh-border-radius: 0 !default;
+$fh-border-width: 1px !default;
+$fh-border-style: solid !default;
+$fh-border-color: #C8C8C8 !default;
+
+// Inputs, Textareas, Select, Option
+$fh-input-height: 4rem !default;
+$fh-input-width: 100% !default;
+$fh-input-max-width: 100% !default;
+$fh-input-bg-color: #FFFFFF !default;
+$fh-focus-bg-color: transparent !default;
+$fh-focus-border-color: #787878 !default;
+
+$fh-focus-font-color: $fh-font-color !default;
+
+// Select Vendor Styling
+$fh-allow-select-vendor-styling: true !default;
+
+// Fieldset & Legend Styling
+$fh-fieldset-bare: false !default;
+
+// Buttons & Input Submits
+$fh-button-height: 4rem !default;
+$fh-button-width: 100% !default;
+$fh-button-max-width: 200px !default;
+$fh-button-font-color: $color-btn-text !default;
+$fh-button-bg-color: $bgcolor-btn;
+$fh-button-hover-bg-color: $bgcolor-btn-hover !default;
+$fh-button-hover-font-color: $color-btn-text !default;
+$fh-button-radius: 0.5rem;
+
+// Layout
+$fh-centered: false !default;
+$fh-display: !default;
+
+
+// Center/Left-Aligned Layout
+@mixin center-layout {
+	@if $fh-centered == true {
+		margin: 0 auto;
+		text-align: center;
+	}
+	@else {
+		margin: 0 0;
+	}
+}
+
+/* Global Reset Styles ------------------ */
+
+input,
+textarea,
+select,
+option,
+optgroup,
+button,
+legend,
+fieldset {
+	box-sizing: border-box;
+	outline: none;
+
+	font-family: $fh-font-family;
+	font-size: $fh-font-size;
+	color: $fh-font-color;
+	vertical-align: top;
+
+	display: $fh-display;
+	@include center-layout;
+}
+
+
+datalist {
+	font-family: $fh-font-family;
+	font-size: $fh-font-size;
+}
+
+label {
+
+	display: $fh-display;
+	padding: 0;
+
+}
+
+
+
+/* Input & Textarea ------------------ */
+
+/* Fields with standard width */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="number"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[list],
+input[type="file"],
+select
+{
+	width: $fh-input-width;
+	max-width: $fh-input-max-width;
+	padding: 1.3rem 0 0;
+	background-color: $fh-input-bg-color;
+
+	border: none;
+	border-bottom: 1px solid $fh-border-color;
+}
+
+.invoice-details__apc {
+
+	input[type="text"] {
+		border: 1px solid $fh-border-color;
+		width: 46%;
+		padding: 0 0.8rem;
+		height: 3.2rem;
+		border-radius: $fh-button-radius;
+
+		&:focus {
+			background-color: $fh-input-bg-color;
+			border-color: $fh-focus-border-color;
+		}
+	}
+	// .button-default {
+	// 	background-color: $bgcolor-btn-grey;
+
+	// &:focus, &:hover {
+	// 	background-color: $bgcolor-btn-grey-hover;
+	// }
+	// }
+}
+
+/* Fields with standard height */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="number"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[list] {
+	height: $fh-input-height;
+	-webkit-appearance: none;
+}
+
+/* Other */
+
+textarea {
+
+	width: $fh-input-width;
+	max-width: $fh-input-max-width;
+	padding: $fh-input-height / 5;
+	background-color: $fh-input-bg-color;
+
+	border-radius: $fh-border-radius;
+	border: $fh-border-width $fh-border-style $fh-border-color;
+	resize: none;
+
+	-webkit-appearance: none;
+	overflow: auto;
+
+}
+
+input[type="range"] {
+	height: $fh-input-height;
+	width: $fh-input-width;
+	max-width: $fh-input-max-width;
+}
+
+input[type="file"] {
+	min-height: $fh-input-height;
+}
+
+input[type="search"] {
+	height: $fh-input-height;
+	-webkit-appearance: none;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline-block;
+	vertical-align: middle;
+}
+// For checkbox and radio to be centered, need to wrap the input and label in a span -
+// .checkbox-container {
+// 	display: block;
+// 	text-align: center;
+// }
+
+
+/* Select ------------------ */
+
+select {
+	height: 29px;
+    margin-top: 1.3rem;
+    padding: 0 $pica 0 0;
+    border-radius: 0;
+
+	background-attachment: scroll;
+	background-clip: padding-box;
+	background-color: transparent;
+	background-image: url("../images/arrow-down.svg");
+	background-origin: padding-box;
+	background-repeat: no-repeat;
+	background-size: 12px 12px;
+	-webkit-background-size: 12px 12px;
+	-moz-background-size: 12px 12px;
+	-o-background-size: 12px 12px;
+	-ms-background-size: 12px 12px;
+	background-position: right center;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	&::-ms-expand {
+		display: none;
+	}
+}
+
+select[multiple] {
+	height: auto;
+	min-height: $fh-input-height;
+	padding: 0;
+
+	option {
+		margin: 0;
+		padding: $fh-input-height / 5;
+	}
+}
+
+/* Fieldset ------------------ */
+
+fieldset {
+	@if $fh-fieldset-bare == true {
+		padding: 0;
+		border: 0;
+	}
+	@else {
+		padding: 1rem 2.5rem;
+		border-radius: $fh-border-radius;
+		border: $fh-border-width $fh-border-style $fh-border-color;
+	}
+}
+
+legend {
+	@if $fh-fieldset-bare == true {
+		padding: 0;
+		font-weight: inherit;
+	}
+	@else {
+		padding: 0 0.5rem;
+		font-weight: 700;
+	}
+}
+
+/* Buttons, Input Type Submit/Reset ------------------ */
+
+
+
+
+%button {
+    display: inline-block;
+    text-decoration: none;
+    margin: $pica 1.2rem 0 0;
+	font: #{$fontSize-small}/1.7rem $myriadBold;
+    color: $color-btn-text;
+    height: 32px;
+	-webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    text-decoration: none;
+	padding: $pica/2 $pica $pica/2;
+	border-width: 0;
+	border-radius: $fh-button-radius;
+	cursor: pointer;
+    box-sizing: border-box;
+}
+.button-default,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="image"] {
+	@extend %button;
+	background-color: $bgcolor-btn;
+    position: relative;
+
+	&:hover,&:active,&:focus {
+	    background-color: $bgcolor-btn-hover;
+	    color: $color-btn-text;
+	    border-color: $fh-focus-border-color;
+	}
+}
+.invoice-details__apc {
+	.button-default  {
+		margin: 0 0 0 1px;
+	}
+}
+.billing-details header span {
+	.button-default  {
+		margin: 0 0 0 -2.4rem;
+	}
+}
+.modal__box__content {
+	.button-default  {
+		margin: 0 1.2rem $pica 0;
+	}
+	label {
+		width: auto;
+		height: auto;
+		margin: 0 1.2rem $pica 0;
+
+		.button-default  {
+			margin: 0;
+		}
+	}
+}
+
+
+.paypal {
+	.button-paypal  {
+		background-color: transparent;
+		color: #787878;
+	    // font-size: 0;
+	    height: 66px;
+	    line-height: 0;
+	    margin: 0;
+	    padding: 0; /*$pica*/
+	    width: 100%;
+	}
+	img {
+		// width: 100%;
+		height: 70%;
+	}
+}
+
+.creditcard {
+	.button-creditcard  {
+	    background-color: transparent;
+	    font-size: 0;
+	    height: 67px;
+	    line-height: 0;
+	    margin: 0;
+	    padding: 1.6rem;
+	    width: 132px;
+		display: table-cell;
+		box-sizing: border-box;
+	}
+	img {
+		width: 56px;
+		height: 35px;
+	}
+}
+.checkout {
+	.button-checkout {
+	    background-color: transparent;
+	    font-size: 0;
+	    height: 67px;
+	    line-height: 0;
+	    margin: 0;
+	    padding: 1.6rem;
+	    width: 132px;
+		display: table-cell;
+	}
+	img {
+		width: 36px;
+		height: 36px;
+	}
+}
+.transfer {
+	.button-transfer {
+	    background-color: transparent;
+	    font-size: 0;
+	    height: 67px;
+	    line-height: 0;
+	    margin: 0;
+	    padding: 1.6rem;
+	    width: 132px;
+		display: block;
+		box-sizing: border-box;
+	}
+	img {
+		width: 68px;
+		height: 24px;
+		// margin-top: $pica / 2.8;
+		margin: 2.1rem 1.4rem;
+	}
+}
+
+.transfer label {
+	padding: $pica*2 $pica 0;
+    /* text-transform: uppercase; */
+    white-space: nowrap;
+    font-size: 1.8rem;
+}
+
+input[type="image"] {
+	text-align: center;
+	padding: $fh-input-height / 5;
+}
+
+
+/* States ------------------ */
+
+a.button-default:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+	background-color: $fh-button-hover-bg-color;
+	color: $fh-button-hover-font-color;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+option:focus {
+	background-color: $fh-input-bg-color;
+	border-color: $fh-focus-border-color;
+}
+
+a.button-default[disabled],
+input[disabled],
+button[disabled] {
+	cursor: default;
+	opacity: 0.35;
+	filter: alpha(opacity=35);
+	background-color: $bgcolor-btn;
+
+	&:hover {
+		background-color: $bgcolor-btn;
+		cursor: default;
+	}
+}
+
+textarea[disabled],
+select[disabled],
+option[disabled],
+input[type="text"]:disabled {
+	cursor: default;
+	opacity: 0.45;
+	filter: alpha(opacity=45);
+	background-color: transparent;
+
+	&:hover {
+		background-color: transparent;
+		cursor: default;
+	}
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+	outline: $fh-focus-border-color solid 0;
+}
+
+input.invalid,
+textarea.invalid,
+select.invalid,
+input.invalid:focus,
+textarea.invalid:focus,
+select.invalid:focus {
+	border-color: $color-border-red;
+	color: $color-red;
+}

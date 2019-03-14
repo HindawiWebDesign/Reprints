@@ -1,0 +1,46 @@
+// Fonts
+$myriadLight:	 'Myriad W01 Lt', sans-serif;
+$myriadRegular:	 'Myriad W01 Regular', sans-serif;
+$myriadSmBd:	 'Myriad W01 SmBd', sans-serif;
+$myriadBold:	 'Myriad W01 Bd', sans-serif;
+$myriadBlack:	 'Myriad W01 Black', sans-serif;
+$myriadSmBdSmCnd:'Myriad W01 SmBd Sm Cnd', sans-serif;
+$myriadBdSmCnd:  'Myriad W01 Bd Sm Cnd', sans-serif;
+$myriadlackSmCnd:'Myriad W01 Black Sm Cnd', sans-serif;
+$myriadCnd:		 'Myriad W01 Cnd', sans-serif;
+$myriadSmBdCnd:  'Myriad W01 SmBd Cnd', sans-serif;
+$myriadBdCnd:	 'Myriad W01 Bd Cnd', sans-serif;
+
+$pica:			 1.6rem;
+$content-width:	 113.2rem;
+
+$fontSize-bigger: 	2.2rem;
+$fontSize-big: 		2rem;
+$fontSize-default: 	1.8rem;
+$fontSize-small:	1.6rem;
+$fontSize-smaller: 	1.4rem;
+
+$margin-center:	 0 auto;
+
+// Colors
+$bgcolor-body:	 		#EDEDED;
+$bgcolor-lightGrey:		#F5F5F5;
+$bgcolor-sectionTitle:	#00718f;
+$bgcolor-btn:			#6cb33e;
+$bgcolor-btn-hover:		mix($bgcolor-btn, #000, 80%);
+$bgcolor-btn-grey:		#C3C3C3;
+$bgcolor-btn-grey-hover:mix($bgcolor-btn-grey, #000, 80%);
+
+$color-body-text:		#787878;
+$color-btn-text:		#FFFFFF;
+$color-white-text:		#FFFFFF;
+$color-border-grey:		#D1D1D1;
+$color-border-red:		#FF0000;
+$color-border-darkGrey:	#B5B5B5;
+
+$color-green:			#6cb33e;
+$color-blue:			#00718f;
+$color-grey:			#787878;
+$color-cookies:			#758285;
+$color-lightGrey:		#BABABA;
+$color-red:				#FF0000;
